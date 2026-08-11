@@ -1,12 +1,16 @@
 from __future__ import annotations
+from dataclasses import dataclass, field
 from datetime import date
 
+@dataclass
 class Tareas:
-    FC: date #fecha de creacion
-    FL: date #fecha limite
-    DP: int = 0 #Dias despues del plazo
-    T: str = "" #Tarea
-    DT: str = "" #Descripcion de la tarea
-    E: str = "pendiente" #Estado
-    SUBT: list[str] = [] #Subtareas
+    T: str
+    FL: date
+    FC: date = field(default_factory=date.today)
+    DP: int = 0
+    DT: str = ""
+    E: str = "pendiente"
+    SUBT: int | None = None
+    ID: int = field(init=False)
+
 
