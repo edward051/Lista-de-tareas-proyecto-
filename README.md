@@ -5,4 +5,3 @@ Edward Sanchez
 
 Requisitos
 Crear, Modificar, poner fecha limite, completar, descompletar (?), eliminar
- 

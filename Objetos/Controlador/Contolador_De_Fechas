@@ -1,0 +1,8 @@
+from __future__ import annotations
+from datetime import date
+
+class Tareas:
+    def Obtener_Fecha_Creacion(self):
+        FC = date.today()
+        return FC
+    
