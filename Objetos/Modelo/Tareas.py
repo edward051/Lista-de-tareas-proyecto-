@@ -11,6 +11,7 @@ class Tareas:
     DT: str = ""
     E: str = "pendiente"
     SUBT: int | None = None
+    FCOMP: date | None = None
     ID: int = field(init=False)
 
     def __init__(self, T: str, FL: date, DT: str = "", FC: date = field(default_factory=date.today), DP: int = 0, E: str = "pendiente", ID: int = 0, SUBT: int | None = None):

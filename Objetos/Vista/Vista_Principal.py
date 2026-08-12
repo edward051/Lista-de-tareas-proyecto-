@@ -49,7 +49,8 @@ class Vista_Principal(QMainWindow):
             if item.widget():
                 item.widget().deleteLater()
         for tarea in self.controlador.lista.LT:
-            texto = QLabel(f"[{tarea.ID}] {tarea.T} | {tarea.DT} | FL: {tarea.FL} | FC: {tarea.FC} | E: {tarea.E}")
+            print(f"[DEBUG] ID:{tarea.ID} | T:{tarea.T} | DT:{tarea.DT} | FL:{tarea.FL} | FC:{tarea.FC} | E:{tarea.E} | SUBT:{tarea.SUBT}")
+            texto = QLabel(f"{tarea.T}\n{tarea.DT}")
             self.layout_tareas.insertWidget(self.layout_tareas.count() - 1, texto)
 
 
