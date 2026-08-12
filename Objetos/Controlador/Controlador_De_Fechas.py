@@ -2,7 +2,7 @@ from __future__ import annotations
 from datetime import date
 
 class Controlador_De_Fechas:
-    def Obtener_Fecha_Creacion(self):
+    def get_FC(self):
         FC = date.today()
         return FC
     
