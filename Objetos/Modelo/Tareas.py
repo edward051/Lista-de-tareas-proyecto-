@@ -13,4 +13,14 @@ class Tareas:
     SUBT: int | None = None
     ID: int = field(init=False)
 
+    def __init__(self, T: str, FL: date, DT: str = "", FC: date = field(default_factory=date.today), DP: int = 0, E: str = "pendiente", ID: int = 0, SUBT: int | None = None):
+        self.T = T
+        self.FL = FL
+        self.FC = FC
+        self.DP = DP
+        self.DT = DT
+        self.E = E
+        self.ID = ID
+        self.SUBT = SUBT
+
 
