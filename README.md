@@ -15,13 +15,13 @@ Crear                                                       [☑️]
 5. Poner la fecha de creacion                               [☑️]
 
 Completar                                                   []
-1. Si ya paso la fecha limite y E="Pendiente" o             []
+1. Si ya paso la fecha limite y E="Pendiente" o             [☑️]
 E="Atrasado" entonces DP=Date.today-FL              
-2. Si checkbox esta marcada entonces E="Completo"           []
+2. Si checkbox esta marcada entonces E="Completo"           [☑️]
 y FCOMP=date.today
-4. Si checkbox no esta marcada y ya paso la fecha limite    []
+4. Si checkbox no esta marcada y ya paso la fecha limite    [☑️]
 entoces E="Atrasado"            
-5. Si checkbox esta marcada y FL-FCOMP>0 entonces 
+5. Si checkbox esta marcada y FL-FCOMP>0 entonces           [☑️]
 E="Completo con retraso"
 6. Si E="pendiente" color de fuente normal                  []
 7. Si E="atrasado"  color de fuente rojo                    []
